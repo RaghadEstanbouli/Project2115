@@ -320,10 +320,31 @@ input:hover{
 }
 @media (max-width: 1000px) {
   .tabs ul li label {
-    white-space: initial;
+    /* raghad */
+    /* white-space: initial; */
+    white-space: nowrap;
   }
-  .tabs ul li label br {
-    display: initial;
+  /* raghad */
+  .tabs ul li{
+    padding: 0.1%; 
+    width: 100%;
+  }
+  /* raghad */
+  .tabs ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  /* raghad */
+  .indicator{
+    display: none;
+  }
+   .tabs ul li label br {
+    /* display: initial; */
+    /* raghad */
+    display: none;
   }
   .tabs ul li label svg {
     height: 1.5em;
@@ -1477,11 +1498,13 @@ input[type="submit"] {
 .imageimage2 {
   max-width: 100%;
   width: 100%;
-  height: 75vh;
-  margin-top: 5%;
+  height: 55vh;
+  margin-top: 0;
+  margin-bottom: 3%;
   margin-left: 0%;
-  margin-right: 15%;
-}
+  margin-right: 15%;}
+
+  
 .content2s img {
   max-width: 100%;
   margin-left: 15%;
